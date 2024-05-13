@@ -1,0 +1,2 @@
+Try this library -> https://github.com/mapmeld/stretch-arabic
+
