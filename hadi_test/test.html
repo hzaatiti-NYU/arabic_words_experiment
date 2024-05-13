@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Arabic Text with Font Stretch</title>
+<style>
+
+    @font-face {
+        font-family: 'Amiri';
+        src: url('https://fonts.googleapis.com/css2?family=Amiri:wght@400&display=swap');
+    }
+    .arabic {
+        font-family: 'Amiri', serif; /* Amiri is chosen for better Arabic script support */
+        font-size: 24px;
+		transform: scaleX(4) scaleY(1.5);
+        font-stretch: ultra-condensed; /* Apply ultra-condensed stretching */
+        direction: rtl; /* Right-to-left text direction for Arabic */
+        unicode-bidi: embed; /* Ensures proper handling of bidirectional text */
+    }
+</style>
+</head>
+<body>
+<div class="arabic">
+    كلمة مثال نص
+</div>
+</body>
+</html>
